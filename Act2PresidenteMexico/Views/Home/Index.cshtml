@@ -1,0 +1,40 @@
+﻿@model IEnumerable<Act2PresidenteMexico.Models.Presidente>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="~/estilos.css" rel="stylesheet" />
+    <title>Presidentes</title>
+</head>
+<body>
+    <header>
+        <img src="~/images/logo-mexico.png" />
+        <p><a href="~/">Presidentes de la República</a></p>
+    </header>
+    <main>
+        <div class="imagenes">
+            <ul>
+                @foreach (var p in Model)
+                {
+                    <li>
+                        <a href="~/Home/biografia">
+                            <img src="presidentes/@(p.Id).jpg">
+                            <p>
+                                @p.Nombre
+                                <br>@(p.InicioGobierno.Year)-@(p.TerminoGobierno.Value.Year)
+                            </p>
+                        </a>
+                    </li>
+                }
+
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <p>Programación Web - Unidad 2</p>
+            <img class="logo" src="~/images/logo-mexico.png" />
+        </div>
+    </footer>
+</body>
+</html>
