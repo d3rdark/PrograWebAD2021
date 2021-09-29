@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Act2PresidenteMexico", "Act
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejemplo", "Ejemplo\Ejemplo.csproj", "{21287CE0-E724-454B-B238-6B2A3B4FB4A8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Act3MapCurricular", "Act3MapCurricular\Act3MapCurricular.csproj", "{B3B9EDE2-D395-4AD3-9B5F-EE70BD63C214}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{21287CE0-E724-454B-B238-6B2A3B4FB4A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21287CE0-E724-454B-B238-6B2A3B4FB4A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21287CE0-E724-454B-B238-6B2A3B4FB4A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3B9EDE2-D395-4AD3-9B5F-EE70BD63C214}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3B9EDE2-D395-4AD3-9B5F-EE70BD63C214}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3B9EDE2-D395-4AD3-9B5F-EE70BD63C214}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3B9EDE2-D395-4AD3-9B5F-EE70BD63C214}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,6 +36,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{F5EAB129-709F-4098-A844-AD083851B474} = {6AB002AC-3592-4153-AD45-7B4028DBF0B2}
 		{21287CE0-E724-454B-B238-6B2A3B4FB4A8} = {6AB002AC-3592-4153-AD45-7B4028DBF0B2}
+		{B3B9EDE2-D395-4AD3-9B5F-EE70BD63C214} = {6AB002AC-3592-4153-AD45-7B4028DBF0B2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {42FEBC23-3724-41E8-B3C6-F582EF394553}
