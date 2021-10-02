@@ -1,0 +1,18 @@
+﻿@model IEnumerable<Act3MapCurricular.Models.Carrera>
+
+@{
+    Layout = "Layout";
+}
+
+<h1>Oferta Académica</h1>
+
+<ol class="rectangle-list">
+
+    
+
+    @foreach (var C in Model)
+    {
+        <li><a href="~/Home/Info/@C.Nombre.Replace(" ","-")">@C.Plan @C.Nombre</a></li>
+    }
+</ol>
+
