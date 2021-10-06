@@ -16,6 +16,7 @@ namespace Act3MapCurricular.Controllers
             return View(carreras);
         }
 
+        [Route("{id}")]
         public IActionResult Info(string id)
         {
         
@@ -29,5 +30,7 @@ namespace Act3MapCurricular.Controllers
             }
             return View(carrera);
         }
+
+
     }
 }

@@ -12,7 +12,7 @@
 
     @foreach (var C in Model)
     {
-        <li><a href="~/Home/Info/@C.Nombre.Replace(" ","-")">@C.Plan @C.Nombre</a></li>
+        <li><a href="~/@C.Nombre.Replace(" ","-")">@C.Plan @C.Nombre</a></li>
     }
 </ol>
 
