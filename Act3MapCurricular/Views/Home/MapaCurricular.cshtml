@@ -1,0 +1,161 @@
+﻿@model Act3MapCurricular.Models.Carrera
+@{
+    Layout = "Layout";
+}
+
+<h1>
+    <a class="btn" href="javascript: history.back()">&#x25c0; Regresar</a>
+    @Model.Nombre
+</h1>
+
+
+
+<h2>@Model.Plan</h2>
+<h2>Total de creditos: @Model.Materia.Sum(x => x.Creditos)</h2>
+<section class="reticula">
+    <table>
+        <thead>
+            <tr>
+                <th>1 semestre</th>
+                <th>2 semestre</th>
+                <th>3 semestre</th>
+                <th>4 semestre</th>
+                <th>5 semestre</th>
+                <th>6 semestre</th>
+                <th>7 semestre</th>
+                <th>8 semestre</th>
+                <th>9 semestre</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>
+                @foreach (var c in Model.Materia)
+                {
+                    if (c.Semestre == 1)
+                    {
+                        <div class="materia">
+                            <span class="clave">@c.Clave</span>
+                            <span class="nombre">@c.Nombre</span>
+                            <span class="tpc">@(c.HorasTeoricas)-@(c.HorasPracticas)-@(c.Creditos)</span>
+                        </div>
+                    }
+                }
+
+
+            </td>
+            <td>
+                @foreach (var m in Model.Materia)
+                {
+
+                    @if (m.Semestre == 2)
+                    {
+                         <div class="materia">
+                            <span class="clave">@m.Clave</span>
+                            <span class="nombre">@m.Nombre</span>
+                             <span class="tpc">@(m.HorasTeoricas)-@(m.HorasPracticas)-@(m.Creditos)</span>
+                         </div>
+                    }
+                }
+
+            </td>
+            <td>
+                @foreach (var m in Model.Materia)
+                {
+                    if (m.Semestre == 3)
+                    {
+                        <div class="materia">
+                            <span class="clave">@m.Clave</span>
+                            <span class="nombre">@m.Nombre</span>
+                            <span class="tpc">@(m.HorasTeoricas)-@(m.HorasPracticas)-@(m.Creditos)</span>
+                        </div>
+                    }
+                }
+
+            </td>
+            <td>
+                @foreach (var m in Model.Materia)
+                {
+                    if (m.Semestre == 4)
+                    {
+                        <div class="materia">
+                            <span class="clave">@m.Clave</span>
+                            <span class="nombre">@m.Nombre</span>
+                            <span class="tpc">@(m.HorasTeoricas)-@(m.HorasPracticas)-@(m.Creditos)</span>
+                        </div>
+                    }
+                }
+
+            </td>
+            <td>
+                @foreach (var m in Model.Materia)
+                {
+                    if (m.Semestre == 5)
+                    {
+                        <div class="materia">
+                            <span class="clave">@m.Clave</span>
+                            <span class="nombre">@m.Nombre</span>
+                            <span class="tpc">@(m.HorasTeoricas)-@(m.HorasPracticas)-@(m.Creditos)</span>
+                        </div>
+                    }
+                }
+
+            </td>
+            <td>
+                @foreach (var m in Model.Materia)
+                {
+                    if (m.Semestre == 6)
+                    {
+                        <div class="materia">
+                            <span class="clave">@m.Clave</span>
+                            <span class="nombre">@m.Nombre</span>
+                            <span class="tpc">@(m.HorasTeoricas)-@(m.HorasPracticas)-@(m.Creditos)</span>
+                        </div>
+                    }
+                }
+
+            </td>
+            <td>
+                @foreach (var m in Model.Materia)
+                {
+                    if (m.Semestre == 7)
+                    {
+                        <div class="materia">
+                            <span class="clave">@m.Clave</span>
+                            <span class="nombre">@m.Nombre</span>
+                            <span class="tpc">@(m.HorasTeoricas)-@(m.HorasPracticas)-@(m.Creditos)</span>
+                        </div>
+                    }
+                }
+            </td>
+            <td>
+                @foreach (var m in Model.Materia)
+                {
+                    if (m.Semestre == 8)
+                    {
+                        <div class="materia">
+                            <span class="clave">@m.Clave</span>
+                            <span class="nombre">@m.Nombre</span>
+                            <span class="tpc">@(m.HorasTeoricas)-@(m.HorasPracticas)-@(m.Creditos)</span>
+                        </div>
+                    }
+                }
+            </td>
+            <td>
+                @foreach (var m in Model.Materia)
+                {
+                    if (m.Semestre == 9)
+                    {
+                        <div class="materia">
+                            <span class="clave">@m.Clave</span>
+                            <span class="nombre">@m.Nombre</span>
+                            <span class="tpc">@(m.HorasTeoricas)-@(m.HorasPracticas)-@(m.Creditos)</span>
+                        </div>
+                    }
+                }
+            </td>
+
+        </tr>
+
+    </table>
+</section>
+
