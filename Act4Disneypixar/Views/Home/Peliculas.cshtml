@@ -1,0 +1,20 @@
+﻿@model IEnumerable<Act4Disneypixar.Models.Pelicula>
+@{
+    Layout = "_Layout";
+}
+
+<div id="pelis">
+
+    @foreach (var p in Model)
+    {
+        <div>
+            <a class="imgPelicula" href="bichos.html">
+                <img src="~/images/portadas/@(p.Id)_p.jpg" alt="@p.Nombre">
+            </a>
+            <div class="nombrePelicula">
+                <p>@p.Nombre</p>
+            </div>
+        </div>
+    }
+
+</div>
