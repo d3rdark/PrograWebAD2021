@@ -8,7 +8,7 @@
     @foreach (var p in Model)
     {
         <div>
-            <a class="imgPelicula" href="bichos.html">
+            <a class="imgPelicula" href="~/Home/InfoPersonajes/@p.Id">
                 <img src="~/images/portadas/@(p.Id)_p.jpg" alt="@p.Nombre">
             </a>
             <div class="nombrePelicula">

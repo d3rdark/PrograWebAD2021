@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Act4Disneypixar.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace Act4Disneypixar.Controllers
 {
@@ -20,5 +21,8 @@ namespace Act4Disneypixar.Controllers
             var peliculas = context.Peliculas.OrderBy(x => x.Nombre);
             return View(peliculas);
         }
+        
+       
+
     }
 }
