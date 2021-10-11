@@ -8,7 +8,7 @@
     @foreach (var p in Model)
     {
         <div>
-            <a class="imgPelicula" href="~/Home/InfoPersonajes/@p.Id">
+            <a class="imgPelicula" href="~/pelicula/@p.Nombre.Replace(" ", "-").ToLower()">
                 <img src="~/images/portadas/@(p.Id)_p.jpg" alt="@p.Nombre">
             </a>
             <div class="nombrePelicula">
