@@ -22,15 +22,16 @@
         <div class="personajes">
             <h2>Personajes</h2>
 
-            @foreach (var p in Model.Apariciones){
+            @foreach (var p in Model.Apariciones)
+            {
                 <div>
                     <a><img src="~/images/personajes/@(p.IdPersonaje).jpg" alt="@p.IdPersonajeNavigation.Nombre"></a>
                     <div class="nombrePelicula">
-                            <p>@p.IdPersonajeNavigation.Nombre</p>
-                     </div>
+                        <p>@p.IdPersonajeNavigation.Nombre</p>
+                    </div>
                 </div>
-             }
-            
+            }
+
 
         </div>
     </div>
