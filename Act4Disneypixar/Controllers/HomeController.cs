@@ -48,7 +48,7 @@ namespace Act4Disneypixar.Controllers
         public IActionResult InfoCortos(string nombre)
         {
             string nombre2 = nombre == null ? "" : nombre.Replace("-", " ");
-            string nom = nombre2.Contains("Jack Jack ataca") ?  nombre2 = "Jack-Jack ataca" : "";
+            string nom = nombre2 == "Jack Jack ataca" ?  nombre2 = "Jack-Jack ataca" : "";
 
             pixarContext context = new pixarContext();
             
