@@ -1,0 +1,23 @@
+﻿@model IEnumerable<Act4Disneypixar.Models.Cortometraje>
+@{
+    Layout = "_Layout";
+}
+
+<div id="principalPeliculas">
+
+    <div id="pelis">
+            @foreach (var c in Model)
+            {
+                <h1>@c.IdCategoriaNavigation.Nombre</h1>
+                <div>
+                    <a class="imgPelicula" href="~/corto/@c.Nombre.Replace(" ", "-")">
+                        <img src="~/images/portadas/@(c.Id)_pc.jpg" alt="@c.Nombre">
+                    </a>
+                    <div class="nombrePelicula">
+                        <p>@c.Nombre</p>
+                    </div>
+                </div>
+            }
+    </div>
+</div>
+

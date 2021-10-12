@@ -36,6 +36,32 @@ namespace Act4Disneypixar.Controllers
             }
             return View(pelicula);
         }
+        [Route("cortos")]
+        public IActionResult Cortos()
+        {
+            pixarContext context = new pixarContext();
+            var cortos = context.Cortometrajes.Include(x => x.IdCategoriaNavigation).OrderBy(x => x.Nombre);
+            return View(cortos);
+        }
+
+        [Route("corto/{nombre}")]
+        public IActionResult InfoCortos(string nombre)
+        {
+
+            string nombre2 = nombre == null ? "" : nombre.Replace("-", " ");
+            string nom = nombre2.Contains("Jack Jack ataca") ?  nombre2 = "Jack-Jack ataca" : "";
+
+
+            pixarContext context = new pixarContext();
+            
+            var infocortos = context.Cortometrajes.Include(x => x.IdCategoriaNavigation)
+                .FirstOrDefault(x => x.Nombre == nombre2 || x.Nombre == nombre || x.Nombre == nom);
+            if (infocortos == null)
+            {
+                return RedirectToAction("cortos");
+            }
+            return View(infocortos);
+        }
         
        
 
