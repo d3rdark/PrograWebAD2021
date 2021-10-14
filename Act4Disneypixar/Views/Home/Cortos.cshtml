@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Act4Disneypixar.Models.Cortometraje>
+﻿@model IEnumerable<Act4Disneypixar.Models.Categorium>
 @{
     Layout = "_Layout";
 }
@@ -6,18 +6,22 @@
 <div id="principalPeliculas">
 
     <div id="pelis">
-            @foreach (var c in Model)
+        @foreach (var cate in Model)
+        {
+            <h1>@cate.Nombre</h1>
+
+            @foreach (var corto in cate.Cortometrajes)
             {
-                <h1>@c.IdCategoriaNavigation.Nombre</h1>
                 <div>
-                    <a class="imgPelicula" href="~/corto/@c.Nombre.Replace(" ", "-")">
-                        <img src="~/images/portadas/@(c.Id)_pc.jpg" alt="@c.Nombre">
+                    <a class="imgPelicula" href="~/corto/@corto.Nombre.Replace(" ", "-")">
+                        <img src="images/portadas/@(corto.Id)_pc.jpg" alt="@corto.Nombre">
                     </a>
                     <div class="nombrePelicula">
-                        <p>@c.Nombre</p>
+                        <p>@corto.Nombre</p>
                     </div>
                 </div>
             }
+        }
     </div>
 </div>
 

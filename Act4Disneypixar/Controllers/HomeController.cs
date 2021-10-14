@@ -36,11 +36,11 @@ namespace Act4Disneypixar.Controllers
             }
             return View(pelicula);
         }
-        [Route("cortos")]
+        [Route("cortos", Name ="cortos")]
         public IActionResult Cortos()
         {
             pixarContext context = new pixarContext();
-            var cortos = context.Cortometrajes.Include(x => x.IdCategoriaNavigation).OrderBy(x => x.Nombre);
+            var cortos = context.Categoria.Include(x => x.Cortometrajes).OrderBy(x => x.Nombre);
             return View(cortos);
         }
 
@@ -51,12 +51,13 @@ namespace Act4Disneypixar.Controllers
             string nom = nombre2 == "Jack Jack ataca" ?  nombre2 = "Jack-Jack ataca" : "";
 
             pixarContext context = new pixarContext();
-            
-            var infocortos = context.Cortometrajes.Include(x => x.IdCategoriaNavigation)
-                .FirstOrDefault(x => x.Nombre == nombre2 || x.Nombre == nombre || x.Nombre == nom);
+
+            /*var infocortos = context.Cortometrajes.Include(x => x.IdCategoriaNavigation)
+                .FirstOrDefault(x => x.Nombre == nombre2 || x.Nombre == nombre || x.Nombre == nom);*/
+            var infocortos = context.Cortometrajes.FirstOrDefault(x => x.Nombre == nombre2 || x.Nombre == nombre || x.Nombre == nom);
             if (infocortos == null)
             {
-                return RedirectToAction("cortos");
+                return RedirectToRoute("cortos");
             }
             return View(infocortos);
         }
