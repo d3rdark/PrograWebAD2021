@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ejemplo", "Ejemplo\Ejemplo.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Act3MapCurricular", "Act3MapCurricular\Act3MapCurricular.csproj", "{B3B9EDE2-D395-4AD3-9B5F-EE70BD63C214}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Act4Disneypixar", "Act4Disneypixar\Act4Disneypixar.csproj", "{F45374D0-B498-429E-9102-3E97315D075C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Act4Disneypixar", "Act4Disneypixar\Act4Disneypixar.csproj", "{F45374D0-B498-429E-9102-3E97315D075C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Act5SweetBakery", "Act5SweetBakery\Act5SweetBakery.csproj", "{1BD71537-F41C-47FB-A4B3-5EF7AB9BD714}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +37,10 @@ Global
 		{F45374D0-B498-429E-9102-3E97315D075C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F45374D0-B498-429E-9102-3E97315D075C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F45374D0-B498-429E-9102-3E97315D075C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BD71537-F41C-47FB-A4B3-5EF7AB9BD714}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BD71537-F41C-47FB-A4B3-5EF7AB9BD714}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BD71537-F41C-47FB-A4B3-5EF7AB9BD714}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BD71537-F41C-47FB-A4B3-5EF7AB9BD714}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,6 +50,7 @@ Global
 		{21287CE0-E724-454B-B238-6B2A3B4FB4A8} = {6AB002AC-3592-4153-AD45-7B4028DBF0B2}
 		{B3B9EDE2-D395-4AD3-9B5F-EE70BD63C214} = {6AB002AC-3592-4153-AD45-7B4028DBF0B2}
 		{F45374D0-B498-429E-9102-3E97315D075C} = {6AB002AC-3592-4153-AD45-7B4028DBF0B2}
+		{1BD71537-F41C-47FB-A4B3-5EF7AB9BD714} = {6AB002AC-3592-4153-AD45-7B4028DBF0B2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {42FEBC23-3724-41E8-B3C6-F582EF394553}

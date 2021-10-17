@@ -29,7 +29,6 @@ namespace Act5SweetBakery
 
             app.UseRouting();
             app.UseFileServer();
-
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapDefaultControllerRoute();
