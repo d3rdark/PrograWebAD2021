@@ -1,0 +1,31 @@
+﻿@model IEnumerable<Act5SweetBakery.Models.Categoria>
+@{
+    ViewData["Title"] = "Recetas";
+    Layout = "_Layout";
+}
+
+
+@foreach (var c in Model)
+{
+    <section class="contenedor">
+
+        <h2>@c.Nombre</h2>
+
+        @foreach (var R in c.Receta)
+        {
+             <div>
+                    <div>
+                        <img src="imagenes/recetas/@(R.Id).png" />
+                    </div>
+                    <a href="~/receta/@(R.Nombre.Replace(" ", "-"))">
+                        <h2>@R.Nombre</h2>
+                    </a>
+                    <p>@R.Descripcion</p>
+                </div>
+            
+        }
+
+    </section>
+
+}
+
