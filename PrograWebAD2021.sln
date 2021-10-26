@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Act5SweetBakery", "Act5Swee
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unidad3", "Unidad3", "{B36FD7EE-3CC3-45DF-BE26-5AEF5DC2CB64}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Act1EstadosMexico", "Act1EstadosMexico\Act1EstadosMexico.csproj", "{6D26F378-8361-4D4D-96E4-64C2E654753E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Act1EstadosMexico", "Act1EstadosMexico\Act1EstadosMexico.csproj", "{6D26F378-8361-4D4D-96E4-64C2E654753E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActFinalZooplanet", "ActFinalZooplanet\ActFinalZooplanet.csproj", "{359F6444-227A-4E4D-8E56-176247C4483E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,6 +45,10 @@ Global
 		{6D26F378-8361-4D4D-96E4-64C2E654753E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D26F378-8361-4D4D-96E4-64C2E654753E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D26F378-8361-4D4D-96E4-64C2E654753E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{359F6444-227A-4E4D-8E56-176247C4483E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{359F6444-227A-4E4D-8E56-176247C4483E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{359F6444-227A-4E4D-8E56-176247C4483E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{359F6444-227A-4E4D-8E56-176247C4483E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -53,6 +59,7 @@ Global
 		{F45374D0-B498-429E-9102-3E97315D075C} = {6AB002AC-3592-4153-AD45-7B4028DBF0B2}
 		{1BD71537-F41C-47FB-A4B3-5EF7AB9BD714} = {6AB002AC-3592-4153-AD45-7B4028DBF0B2}
 		{6D26F378-8361-4D4D-96E4-64C2E654753E} = {6AB002AC-3592-4153-AD45-7B4028DBF0B2}
+		{359F6444-227A-4E4D-8E56-176247C4483E} = {6AB002AC-3592-4153-AD45-7B4028DBF0B2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {42FEBC23-3724-41E8-B3C6-F582EF394553}

@@ -1,0 +1,29 @@
+﻿@model ActFinalZooplanet.Models.Especy;
+@{
+    ViewData["Title"] = "Especie";
+    Layout = "_Layout";
+}
+
+<div class="especieficha1">
+    <img src="~/especiesimg/@(Model.Id).jpg">
+    <div>
+        <h1>@Model.Especie</h1>
+        <p><label>Clase:</label><a href="~/especies/@Model.IdClaseNavigation.Nombre.Replace(" ","-")">@Model.IdClaseNavigation.Nombre</a></p>
+        @if (Model.Peso >= 1)
+        {
+            <p><label>Peso:</label>@(Model.Peso)kg</p>
+        }
+        else
+        {
+            <p><label>Peso:</label>@(Model.Peso)g</p>
+        }
+
+        <p><label>Tamaño:</label>@(Model.Tamaño)cm</p>
+        <p><label>Habitat:</label>@Model.Habitat</p>
+        <p><label>Descripción:</label></p>
+        <p>@Model.Observaciones</p>
+    </div>
+
+    <a href="~/especies/@Model.IdClaseNavigation.Nombre.Replace(" ","-")">Regresar</a>
+</div>
+
