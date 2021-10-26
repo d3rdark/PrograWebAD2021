@@ -42,7 +42,7 @@ namespace ActFinalZooplanet.Controllers
             var especie = context.Especies.Include(x => x.IdClaseNavigation).FirstOrDefault(x => x.Especie == nombre);
             if (especie == null)
             {
-                return RedirectToAction("Especies");
+                return RedirectToAction("Index");
             }
             return View(especie);
         }
